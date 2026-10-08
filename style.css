@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    color: #1f2937;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+}
+
+header,
+.card {
+    background: white;
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+}
+
+header {
+    text-align: center;
+}
+
+.bell {
+    font-size: 55px;
+}
+
+header h1 {
+    margin: 5px 0;
+}
+
+header p {
+    color: #64748b;
+}
+
+.status {
+    text-align: center;
+    padding: 14px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.online {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.offline {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.system-status {
+    margin-top: 10px;
+    padding: 12px;
+    text-align: center;
+    border-radius: 10px;
+    background: #f1f5f9;
+    font-weight: bold;
+}
+
+.current-subject {
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.timer {
+    text-align: center;
+    font-family: monospace;
+    font-size: 42px;
+    font-weight: bold;
+    background: #f1f5f9;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.center {
+    text-align: center;
+    color: #64748b;
+}
+
+.btn {
+    width: 100%;
+    border: 0;
+    border-radius: 12px;
+    padding: 15px;
+    margin-top: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.blue {
+    background: #2563eb;
+}
+
+.green {
+    background: #16a34a;
+}
+
+.gray {
+    background: #64748b;
+}
+
+.orange {
+    background: #f59e0b;
+}
+
+.red {
+    background: #dc2626;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.subject {
+    padding: 13px;
+    margin-top: 8px;
+    background: #f1f5f9;
+    border-radius: 10px;
+}
+
+.subject.active {
+    background: #dcfce7;
+    color: #166534;
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timer {
+        font-size: 32px;
+    }
+}
