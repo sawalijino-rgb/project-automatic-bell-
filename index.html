@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Bell System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <div class="bell">🔔</div>
+        <h1>Automatic Bell System</h1>
+        <p>ESP32 • 8 Subjects • 5 Bells</p>
+    </header>
+
+    <section class="card">
+        <h2>System Status</h2>
+
+        <div id="connection" class="status offline">
+            ESP32 DISCONNECTED
+        </div>
+
+        <div id="systemStatus" class="system-status">
+            SYSTEM READY
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Current Subject</h2>
+
+        <div id="currentSubject" class="current-subject">
+            Waiting...
+        </div>
+
+        <div id="remaining" class="timer">
+            --:--:--
+        </div>
+
+        <p class="center">Time Remaining</p>
+    </section>
+
+    <section class="card">
+        <h2>Bell Control</h2>
+
+        <button class="btn blue" onclick="ringAll()">
+            🔔 RING ALL 5 BELLS
+        </button>
+
+        <button class="btn gray" onclick="stopAll()">
+            ⛔ STOP
+        </button>
+    </section>
+
+    <section class="card">
+        <h2>Individual Bell Test</h2>
+
+        <div class="grid">
+
+            <button class="btn green" onclick="ringBell(1)">
+                Bell 1
+            </button>
+
+            <button class="btn green" onclick="ringBell(2)">
+                Bell 2
+            </button>
+
+            <button class="btn green" onclick="ringBell(3)">
+                Bell 3
+            </button>
+
+            <button class="btn green" onclick="ringBell(4)">
+                Bell 4
+            </button>
+
+            <button class="btn green" onclick="ringBell(5)">
+                Bell 5
+            </button>
+
+        </div>
+    </section>
+
+    <section class="card emergency">
+
+        <h2>Emergency</h2>
+
+        <button class="btn orange" onclick="earthquakeTest()">
+            🌎 EARTHQUAKE TEST
+        </button>
+
+        <button class="btn red" onclick="fireTest()">
+            🔥 FIRE TEST
+        </button>
+
+        <button class="btn gray" onclick="stopAlarm()">
+            ⛔ STOP ALARM
+        </button>
+
+    </section>
+
+    <section class="card">
+
+        <h2>8 Subjects</h2>
+
+        <div id="subjects">
+
+            <div class="subject">1. Subject 1</div>
+            <div class="subject">2. Subject 2</div>
+            <div class="subject">3. Subject 3</div>
+            <div class="subject">4. Subject 4</div>
+            <div class="subject">5. Subject 5</div>
+            <div class="subject">6. Subject 6</div>
+            <div class="subject">7. Subject 7</div>
+            <div class="subject">8. Subject 8</div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
